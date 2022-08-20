@@ -56,12 +56,23 @@ const NavLinksWrapper = styled.div`
     background-color: ${COLORS.white};
     padding: 1.3rem 5rem;
     border-radius: 1.6rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: ${COLORS.black};
+      color: ${COLORS.white};
+      transform: scale(0.9);
+    }
   }
   .nav-item {
     font-size: ${FONTSIZES.lg};
     font-weight: ${FONTWEIGHT.medium};
     color: ${COLORS.white};
     text-decoration: none;
+
+    &:hover {
+      color: ${COLORS.black};
+    }
   }
 `;
 

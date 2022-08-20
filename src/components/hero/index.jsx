@@ -17,7 +17,7 @@ const HeroSection = () => {
           </HeroSubText>
         </div>
 
-        <DPIconHero />
+        <DPIconHero className="icon" />
       </HeroContainer>
 
       <Button text="Talk to Us" className="cta-btn" />
@@ -33,12 +33,26 @@ const HeroWrapper = styled.section`
     padding: 2.7rem 9.6rem;
     font-size: ${FONTSIZES.lg};
     font-weight: ${FONTWEIGHT.bold};
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: ${COLORS.black};
+      color: ${COLORS.white};
+      transform: scale(0.9);
+    }
   }
 `;
 const HeroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .icon {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(0.7);
+    }
+  }
 `;
 
 const HeroText = styled.h1`

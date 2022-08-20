@@ -13,4 +13,5 @@ const ButttonComp = styled.button`
   outline: none;
   background-color: ${COLORS.white};
   border-radius: 1.6rem;
+  cursor: pointer;
 `;
