@@ -50,7 +50,9 @@ const FutureSection = () => {
 
 export default FutureSection;
 
-const FutureWrapper = styled.section``;
+const FutureWrapper = styled.section`
+  margin-bottom: 14.8rem;
+`;
 
 const FutureText = styled.h1`
   color: ${COLORS.white};
@@ -81,7 +83,7 @@ const CardItems = styled.div`
     background-color: ${COLORS.black};
     border-radius: 1.6rem;
     box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.47);
-    padding: 3.8rem 4.6rem 3.4rem 3.7rem;
+    padding: 1.8rem 1.6rem 2.4rem 2.7rem;
 
     &__header {
       display: flex;
@@ -89,6 +91,10 @@ const CardItems = styled.div`
       gap: 2.8rem;
       margin-bottom: 4.6rem;
     }
+  }
+
+  @media only screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
   }
 `;
 

@@ -2,8 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { COLORS } from '../../constants/colors';
 
-const Button = ({ text, className }) => {
-  return <ButttonComp className={className}>{text}</ButttonComp>;
+const Button = ({ text, className, type }) => {
+  return (
+    <ButttonComp type={type} className={className}>
+      {text}
+    </ButttonComp>
+  );
 };
 
 export default Button;

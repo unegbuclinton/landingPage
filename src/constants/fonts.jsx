@@ -3,7 +3,7 @@ export const FONTSIZES = {
   small: '2.4rem',
   lg: '3.6rem',
   xxlagre: '4.8rem',
-  xxxlarge: '9.6rem',
+  xxxlarge: '3.2rem',
 };
 
 export const FONTWEIGHT = {
