@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
+import ContactSection from '../../contactsection';
 import FutureSection from '../../futuresection';
 import HeroSection from '../../hero';
 import Nav from '../../nav';
@@ -15,6 +16,7 @@ function SinglePage() {
         <HeroSection />
         <NextStep />
         <FutureSection />
+        <ContactSection />
       </Wrapper>
     </Router>
   );
@@ -23,5 +25,9 @@ function SinglePage() {
 export default SinglePage;
 
 const Wrapper = styled.div`
-  padding: 9.8rem 9.3rem;
+  padding: 4.5rem 7.2rem;
+
+  @media only screen and (max-width: 785px) {
+    padding: 4.5rem 4.2rem;
+  }
 `;

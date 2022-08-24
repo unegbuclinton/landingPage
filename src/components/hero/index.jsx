@@ -30,8 +30,8 @@ export default HeroSection;
 const HeroWrapper = styled.section`
   margin-bottom: 9.3rem;
   .cta-btn {
-    padding: 2.7rem 9.6rem;
-    font-size: ${FONTSIZES.lg};
+    padding: 2rem 6.2rem;
+    font-size: ${FONTSIZES.small};
     font-weight: ${FONTWEIGHT.bold};
     transition: all 0.2s ease-in-out;
 
@@ -41,11 +41,19 @@ const HeroWrapper = styled.section`
       transform: scale(0.9);
     }
   }
+
+  @media only screen and (max-width: 520px) {
+    .cta-btn {
+      padding: 2rem 3.2rem;
+      font-size: ${FONTSIZES.xsmall};
+    }
+  }
 `;
 const HeroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5rem;
 
   .icon {
     transition: all 0.2s ease-in-out;
@@ -53,12 +61,21 @@ const HeroContainer = styled.div`
       transform: scale(0.7);
     }
   }
+
+  @media only screen and (max-width: 520px) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .icon {
+      margin-bottom: 4rem;
+    }
+  }
 `;
 
 const HeroText = styled.h1`
   color: ${COLORS.white};
   font-size: ${FONTSIZES.xxxlarge};
-  margin-bottom: 5.5rem;
+  margin-bottom: 4rem;
 `;
 
 const HeroSubText = styled.p`

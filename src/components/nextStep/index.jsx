@@ -18,11 +18,6 @@ const NextStep = () => {
         Why a Next Step in TV, Newspaper & OOH Ads:
       </NextStepHeader>
       <NextStepContainer>
-        <div className="left-section">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis modi est
-          sit voluptatem reiciendis alias nemo praesentium, quidem pariatur
-          nulla.
-        </div>
         <div className="right-section">
           {info?.map(({ text }, idx) => (
             <div className="info-container" key={idx}>
@@ -43,28 +38,20 @@ const NextStepSection = styled.section`
 `;
 
 const NextStepHeader = styled.h1`
-  font-size: ${FONTSIZES.lg};
+  font-size: ${FONTSIZES.xxxlarge};
   font-weight: ${FONTWEIGHT.bold};
   color: ${COLORS.white};
   margin-bottom: 3.9rem;
 `;
 
 const NextStepContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 10rem;
-  width: 100%;
-  padding: 5rem 6.3rem 5.4rem 6.8rem;
-  height: 43.3rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem 2.3rem 1.4rem 2.8rem;
   border-radius: 1.3rem;
   box-shadow: 2px 3px 20px #000000;
   background-color: ${COLORS.black};
 
-  .left-section {
-    width: 43.9rem;
-    height: 100%;
-    background-color: ${COLORS.white};
-  }
   .right-section {
     .info-container {
       display: flex;
@@ -74,7 +61,6 @@ const NextStepContainer = styled.div`
       &__text {
         font-size: ${FONTSIZES.xsmall};
         color: ${COLORS.white};
-        width: 47rem;
       }
     }
   }

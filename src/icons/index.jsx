@@ -1,3 +1,4 @@
+export { ReactComponent as DPIconBars } from './svg/bars.svg';
 export { ReactComponent as DPIconChecked } from './svg/checked.svg';
 export { ReactComponent as DPIconHero } from './svg/hero.svg';
 export { ReactComponent as DPIconLogo } from './svg/logo.svg';
