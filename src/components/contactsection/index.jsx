@@ -69,13 +69,17 @@ const ContactWrapper = styled.form`
       padding: 2.4rem 6.8rem;
       font-size: ${FONTSIZES.small};
       border-radius: 0.6rem;
-      margin-top: 5rem;
+      margin-top: 3rem;
       transition: all 0.2s ease-in-out;
 
       &:hover {
         background-color: ${COLORS.black};
         color: ${COLORS.white};
         transform: scale(0.9);
+      }
+
+      @media only screen and (max-width: 520px) {
+        padding: 1.4rem 3.8rem;
       }
     }
   }
