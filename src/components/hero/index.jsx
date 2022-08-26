@@ -30,6 +30,7 @@ export default HeroSection;
 const HeroWrapper = styled.section`
   margin-bottom: 9.3rem;
   .cta-btn {
+    color: ${COLORS.black};
     padding: 2rem 6.2rem;
     font-size: ${FONTSIZES.small};
     font-weight: ${FONTWEIGHT.bold};
@@ -38,6 +39,7 @@ const HeroWrapper = styled.section`
     &:hover {
       background-color: ${COLORS.black};
       color: ${COLORS.white};
+      -webkit-text-fill-color: ${COLORS.white};
       transform: scale(0.9);
     }
   }
