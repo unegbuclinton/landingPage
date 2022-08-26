@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 import ContactSection from '../../contactsection';
+import Footer from '../../footer';
 import FutureSection from '../../futuresection';
 import HeroSection from '../../hero';
 import Nav from '../../nav';
@@ -18,6 +19,7 @@ function SinglePage() {
         <FutureSection />
         <ContactSection />
       </Wrapper>
+      <Footer />
     </Router>
   );
 }

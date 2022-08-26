@@ -39,7 +39,8 @@ const NextStepSection = styled.section`
 
 const NextStepHeader = styled.h1`
   font-size: ${FONTSIZES.xxxlarge};
-  font-weight: ${FONTWEIGHT.bold};
+  font-weight: ${FONTWEIGHT.medium};
+  text-align: center;
   color: ${COLORS.white};
   margin-bottom: 3.9rem;
 `;
