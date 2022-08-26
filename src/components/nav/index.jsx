@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { COLORS } from '../../constants/colors';
 import { FONTSIZES, FONTWEIGHT } from '../../constants/fonts';
 import { DPIconBars, DPIconLogo } from '../../icons';
-import Button from '../atoms/Button';
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
