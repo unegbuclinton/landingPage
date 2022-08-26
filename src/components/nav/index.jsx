@@ -40,7 +40,9 @@ const Nav = () => {
       </div>
       <NavLogo>
         <DPIconLogo />
-        <NavLogoText>Logo</NavLogoText>
+        <NavLogoText>
+          Market <br /> Quardrant
+        </NavLogoText>
       </NavLogo>
       <NavLinksWrapper>
         {links?.map(({ text, path }, idx) => (
@@ -48,7 +50,6 @@ const Nav = () => {
             {text}
           </NavLink>
         ))}
-        <Button text="Login" className="btn-login" />
       </NavLinksWrapper>
 
       <NavLinkMobile>
@@ -113,6 +114,7 @@ const NavLogo = styled.div`
   gap: 2rem;
   @media only screen and (max-width: 520px) {
     flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -121,21 +123,6 @@ const NavLinksWrapper = styled.div`
   align-items: center;
   gap: 3.5rem;
 
-  .btn-login {
-    font-size: ${FONTSIZES.xsmall};
-    border: none;
-    outline: none;
-    background-color: ${COLORS.white};
-    padding: 0.9rem 3.5rem;
-    border-radius: 1.6rem;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      background-color: ${COLORS.black};
-      color: ${COLORS.white};
-      transform: scale(0.9);
-    }
-  }
   .nav-item {
     font-size: ${FONTSIZES.small};
     font-weight: ${FONTWEIGHT.medium};
@@ -163,7 +150,7 @@ const NavLinkMobile = styled.div`
 `;
 
 const NavLogoText = styled.p`
-  font-size: ${FONTSIZES.small};
+  font-size: ${FONTSIZES.xsmall};
   font-weight: ${FONTWEIGHT.bold};
   color: ${COLORS.white};
 `;
