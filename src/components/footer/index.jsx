@@ -9,7 +9,9 @@ const Footer = () => {
     <FooterWrapper>
       <FooterLogo>
         <DPIconLogo />
-        <FooterLogoText>Logo</FooterLogoText>
+        <FooterLogoText>
+          Market <br /> Quardrant
+        </FooterLogoText>
       </FooterLogo>
       <div className="footer-info__container">
         <FooterContainer>
@@ -76,7 +78,7 @@ const FooterLogo = styled.div`
 
 const FooterLogoText = styled.p`
   font-size: ${FONTSIZES.small};
-  font-weight: ${FONTWEIGHT.bold};
+  font-weight: ${FONTWEIGHT.normal};
   color: ${COLORS.white};
 `;
 
