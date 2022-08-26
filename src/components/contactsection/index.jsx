@@ -68,9 +68,11 @@ const ContactWrapper = styled.form`
     .contact-btn {
       padding: 2.4rem 6.8rem;
       font-size: ${FONTSIZES.small};
+      font-weight: ${FONTWEIGHT.bold};
       border-radius: 0.6rem;
       margin-top: 3rem;
       transition: all 0.2s ease-in-out;
+      color: ${COLORS.black};
 
       &:hover {
         background-color: ${COLORS.black};
