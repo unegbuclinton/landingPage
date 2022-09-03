@@ -17,16 +17,16 @@ function SinglePage() {
         <Container id="home">
           <HeroSection />
         </Container>
-
         <NextStep />
-        <FutureSection />
+        <Container id="about">
+          <FutureSection />
+        </Container>
         <Container id="contact">
           <ContactSection />
         </Container>
       </Wrapper>
-      <Container id="about">
-        <Footer />
-      </Container>
+
+      <Footer />
     </Router>
   );
 }
