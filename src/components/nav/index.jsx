@@ -88,8 +88,8 @@ const NavWrapper = styled.nav`
   top: 0px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 19.6rem;
-  padding: 5.5rem 7.2rem;
+  margin-bottom: 8.6rem;
+  padding: 5.5rem 3.2rem;
   background: ${({ navbar }) => (navbar ? COLORS.white : 'transparent')};
   z-index: 2;
   .nav-links {
@@ -125,6 +125,7 @@ const NavWrapper = styled.nav`
   }
 
   @media only screen and (min-width: 520px) {
+    margin-bottom: 19.6rem;
     padding: 4.5rem 7.2rem;
     .nav-links {
       display: none;
