@@ -10,7 +10,7 @@ const Footer = () => {
       <FooterLogo>
         <DPIconLogo />
         <FooterLogoText>
-          Market <br /> Quardrant
+          Market <br /> Quadrant
         </FooterLogoText>
       </FooterLogo>
       <div className="footer-info__container">

@@ -8,19 +8,19 @@ const FutureSection = () => {
   const cards = [
     {
       header: 'Engagement',
-      text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste exdoloremque id illo molestiae atque alias saepe inventore accusantium. Adipisci.',
+      text: ' While impression and eyeballs is great it can’t be compared to actual engagement. Every adverts wants this and we help make it posssible',
     },
     {
       header: 'Collect Data',
-      text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste exdoloremque id illo molestiae atque alias saepe inventore accusantium. Adipisci.',
+      text: ' Because the customers engage we can help you collect data on them which you can save and use to retarget them in your next ad. That data can be your edge.',
     },
     {
       header: 'Insight',
-      text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste exdoloremque id illo molestiae atque alias saepe inventore accusantium. Adipisci.',
+      text: ' You can provide real-time insight to your clients and sell them much more than the hopes of impression. They can see actual growth',
     },
     {
       header: 'Creative interaction',
-      text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste exdoloremque id illo molestiae atque alias saepe inventore accusantium. Adipisci.',
+      text: ' Using QR codes you can allow your team get creative and design campaigns that helps customers interact with your clients products.',
     },
   ];
   return (
@@ -79,7 +79,7 @@ const CardItems = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
   .card-item {
-    min-height: 32.7rem;
+    min-height: 25.7rem;
     background-color: ${COLORS.black};
     border-radius: 1.6rem;
     box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.47);

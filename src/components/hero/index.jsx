@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import { COLORS } from '../../constants/colors';
 import { FONTSIZES, FONTWEIGHT } from '../../constants/fonts';
@@ -19,8 +20,9 @@ const HeroSection = () => {
 
         <DPIconHero className="icon" />
       </HeroContainer>
-
-      <Button text="Talk to Us" className="cta-btn" />
+      <Link spy={true} smooth={true} to="contact">
+        <Button text="Talk to Us" className="cta-btn" />
+      </Link>
     </HeroWrapper>
   );
 };

@@ -10,16 +10,23 @@ import NextStep from '../../nextStep';
 function SinglePage() {
   return (
     <Router>
+      <Routes>
+        <Route path="/" element={<Nav />} />
+      </Routes>
       <Wrapper>
-        <Routes>
-          <Route path="/" element={<Nav />} />
-        </Routes>
-        <HeroSection />
+        <Container id="home">
+          <HeroSection />
+        </Container>
+
         <NextStep />
         <FutureSection />
-        <ContactSection />
+        <Container id="contact">
+          <ContactSection />
+        </Container>
       </Wrapper>
-      <Footer />
+      <Container id="about">
+        <Footer />
+      </Container>
     </Router>
   );
 }
@@ -33,3 +40,5 @@ const Wrapper = styled.div`
     padding: 4.5rem 4.2rem;
   }
 `;
+
+const Container = styled.div``;
