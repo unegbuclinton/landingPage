@@ -95,7 +95,7 @@ const NavWrapper = styled.nav`
     display: flex;
     flex-direction: column;
     width: 100%;
-    top: 10.6rem;
+    top: 7.6rem;
     left: 0;
     height: 0%;
     background-color: ${COLORS['smoky-black']};
