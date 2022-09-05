@@ -42,7 +42,7 @@ const Nav = () => {
 
   return (
     <NavWrapper navbar={navbar}>
-      <div className={`nav-links ${openNav ? 'active' : ''}`}>
+      <div className={`nav-links ${openNav ? 'active-menu' : ''}`}>
         {links?.map(({ text, path }, idx) => (
           <Link to={path} key={idx} className="nav-links__mobile">
             {text}
@@ -51,9 +51,7 @@ const Nav = () => {
       </div>
       <NavLogo navbar={navbar}>
         <DPIconLogo fill={navbar ? '#000' : '#fff'} />
-        <NavLogoText navbar={navbar}>
-          Market <br /> Quadrant
-        </NavLogoText>
+        <NavLogoText navbar={navbar}>Market Quadrant</NavLogoText>
       </NavLogo>
       <NavLinksWrapper navbar={navbar}>
         {links?.map(({ text, path }, idx) => (
@@ -89,7 +87,7 @@ const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   margin-bottom: 8.6rem;
-  padding: 5.5rem 3.2rem;
+  padding: 0.5rem 3.2rem 0 3.2rem;
   background: ${({ navbar }) => (navbar ? COLORS.white : 'transparent')};
   z-index: 2;
   .nav-links {
@@ -119,14 +117,14 @@ const NavWrapper = styled.nav`
       }
     }
   }
-  .active {
-    height: 130%;
+  .active-menu {
+    height: 23rem;
     transition: all 0.2s ease-in-out;
   }
 
   @media only screen and (min-width: 520px) {
     margin-bottom: 19.6rem;
-    padding: 4.5rem 7.2rem;
+    padding: 1.5rem 7.2rem;
     .nav-links {
       display: none;
     }
@@ -153,6 +151,7 @@ const NavLinksWrapper = styled.div`
     font-weight: ${FONTWEIGHT.medium};
     color: ${({ navbar }) => (navbar ? COLORS.black : COLORS.white)};
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       color: ${COLORS.black};
@@ -170,18 +169,20 @@ const NavLinkMobile = styled.div`
     cursor: pointer;
   }
   @media only screen and (max-width: 785px) {
+    margin-top: 2rem;
     display: block;
   }
 `;
 
 const NavLogoText = styled.p`
-  font-size: ${FONTSIZES.xsmall};
-  font-weight: ${FONTWEIGHT.bold};
+  font-size: ${FONTSIZES.xxsmall};
+  font-weight: ${FONTWEIGHT.normal};
   color: ${({ navbar }) => (navbar ? COLORS.black : COLORS.white)};
 
   @media only screen and (max-width: 520px) {
+    font-size: ${FONTSIZES.xxsmall};
     transform: ${({ navbar }) =>
-      navbar ? ' translateY(-350%)' : ' translateY(0)'};
+      navbar ? ' translatex(-240%)' : ' translateX(0)'};
     transition: transform 0.4s ease-in-out;
   }
 `;
