@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <FooterLogo>
-        <DPIconLogo />
+        <DPIconLogo fill="#fff" />
         <FooterLogoText>
           Market <br /> Quadrant
         </FooterLogoText>

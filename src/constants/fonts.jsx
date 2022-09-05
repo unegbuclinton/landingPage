@@ -1,4 +1,6 @@
 export const FONTSIZES = {
+  tiny: '1.2rem',
+  xxxsmall: '1.4rem',
   xxsmall: '1.8rem',
   xsmall: '2rem',
   small: '2.4rem',
