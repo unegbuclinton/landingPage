@@ -9,9 +9,7 @@ const Footer = () => {
     <FooterWrapper>
       <FooterLogo>
         <DPIconLogo fill="#fff" />
-        <FooterLogoText>
-          Market <br /> Quadrant
-        </FooterLogoText>
+        {/* <FooterLogoText></FooterLogoText> */}
       </FooterLogo>
       <div className="footer-info__container">
         <FooterContainer>
@@ -76,11 +74,11 @@ const FooterLogo = styled.div`
   }
 `;
 
-const FooterLogoText = styled.p`
-  font-size: ${FONTSIZES.small};
-  font-weight: ${FONTWEIGHT.normal};
-  color: ${COLORS.white};
-`;
+// const FooterLogoText = styled.p`
+//   font-size: ${FONTSIZES.small};
+//   font-weight: ${FONTWEIGHT.normal};
+//   color: ${COLORS.white};
+// `;
 
 const FooterContainer = styled.div`
   display: flex;

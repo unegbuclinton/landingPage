@@ -51,7 +51,7 @@ const Nav = () => {
       </div>
       <NavLogo navbar={navbar}>
         <DPIconLogo fill={navbar ? '#000' : '#fff'} />
-        <NavLogoText navbar={navbar}>Market Quadrant</NavLogoText>
+        <NavLogoText navbar={navbar}>QR Kite</NavLogoText>
       </NavLogo>
       <NavLinksWrapper navbar={navbar}>
         {links?.map(({ text, path }, idx) => (
@@ -136,8 +136,7 @@ const NavLogo = styled.div`
   align-items: center;
   gap: 2rem;
   @media only screen and (max-width: 520px) {
-    flex-direction: ${({ navbar }) => (navbar ? 'row' : 'column')};
-    align-items: flex-start;
+    align-items: center;
   }
 `;
 
@@ -175,14 +174,16 @@ const NavLinkMobile = styled.div`
 `;
 
 const NavLogoText = styled.p`
-  font-size: ${FONTSIZES.xxsmall};
+  font-size: ${FONTSIZES.small};
   font-weight: ${FONTWEIGHT.normal};
   color: ${({ navbar }) => (navbar ? COLORS.black : COLORS.white)};
+  /* margin-bottom: 1rem; */
 
   @media only screen and (max-width: 520px) {
-    font-size: ${FONTSIZES.xxsmall};
+    display: none;
+    /* font-size: ${FONTSIZES.xxsmall};
     transform: ${({ navbar }) =>
       navbar ? ' translatex(-240%)' : ' translateX(0)'};
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out; */
   }
 `;
